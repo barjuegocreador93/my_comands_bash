@@ -1,20 +1,18 @@
 #!/bin/bash
-clear 
+clear
 date
 echo "Hola "
 echo ""
 
 function mastercab_info()
 {
-	
 
-	
 		echo "Estos son los comandos: "
 		echo " "
 		echo "gbsh    -> gedit ~/.bashrc"
 		echo "sbsh    -> source ~/.bashrc"
-		echo "gcbsh   -> gedit ~/Documentos/comandos/comandos_basicos.bash"
-		echo "scbsh   -> source ~/Documentos/comandos/comandos_basicos.bash"
+		echo "gcbsh   -> gedit ~/Documentos/my_comands_bash/comandos_basicos.bash"
+		echo "scbsh   -> source ~/Documentos/my_comands_bash/comandos_basicos.bash"
 		echo "cls     -> clear"
 		echo ""
 		echo "--Herramientas de sudo--"
@@ -29,20 +27,19 @@ function mastercab_info()
 		echo ""
 		echo "--Herramientas de github--"
 		echo "git-c   -> git clone"
-		echo "git-a   -> git add"	
+		echo "git-a   -> git add"
 		echo "git-i   -> git init"
 		echo "git-s   -> git status"
 		echo "git-com -> git commit -m"
 		echo "git-p   -> git push"
 		echo "git-pom -> git-p origin master"
-	
 }
 
 # Inicio de mis comandos
 alias gbsh="gedit ~/.bashrc"
 alias sbsh="source ~/.bashrc"
-alias gcbsh="gedit ~/Documentos/comandos/comandos_basicos.bash"
-alias scbsh="source ~/Documentos/comandos/comandos_basicos.bash"
+alias gcbsh="gedit ~/Documentos/my_comands_bash/comandos_basicos.bash"
+alias scbsh="source ~/Documentos/my_comands_bash/comandos_basicos.bash"
 alias sd="sudo"
 alias sag="sd apt-get"
 alias s-ins="sag install"
@@ -75,8 +72,8 @@ alias my_documts="cd ~/Documentos/"
 alias my_proyects="my_documts ; cd Proyects/ ; ls"
 alias dirmy_proyects="~/Documentos/Proyects/"
 
-alias my_comands="my_documts ; cd comandos/; ls"
-alias dirmy_comands="~/Documentos/comandos/"
+alias my_comands="my_documts ; cd my_comands_bash/; ls"
+alias dirmy_comands="~/Documentos/my_comands_bash/"
 
 alias my_repositorys="my_documts ; cd Repositorios/; ls"
 alias dirmy_repositorys="~/Documentos/Repositorios/"
@@ -104,8 +101,8 @@ alias dirmy_appm="~/Apps-MasterCab/"
 # end my_dirs
 
 # my cordova comands proyects
-source ~/Documentos/comandos/cordova_scripts.bash
+source ~/Documentos/my_comands_bash/cordova_scripts.bash
 # end my cordova
 
 
-source ~/Documentos/comandos/exmaplebash.bash
+source ~/Documentos/my_comands_bash/exmaplebash.bash

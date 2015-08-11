@@ -46,5 +46,5 @@ fi
 }
 
 
-alias scordova_script.bash="source ~/Documentos/comandos/cordova_scripts.bash"
-alias gcordova_script.bash="gedit ~/Documentos/comandos/cordova_scripts.bash"
+alias scordova_script.bash="source ~/Documentos/my_comands_bash/cordova_scripts.bash"
+alias gcordova_script.bash="gedit ~/Documentos/my_comands_bash/cordova_scripts.bash"
