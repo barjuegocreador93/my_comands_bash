@@ -1,5 +1,6 @@
-
 #!/bin/bash
+
+
 
 #permite copiar el ejecutable de un proyecto cordova a otro sitio
 

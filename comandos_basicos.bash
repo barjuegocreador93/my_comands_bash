@@ -4,36 +4,7 @@ date
 echo "Hola "
 echo ""
 
-function mastercab_info()
-{
-
-		echo "Estos son los comandos: "
-		echo " "
-		echo "gbsh    -> gedit ~/.bashrc"
-		echo "sbsh    -> source ~/.bashrc"
-		echo "gcbsh   -> gedit ~/Documentos/my_comands_bash/comandos_basicos.bash"
-		echo "scbsh   -> source ~/Documentos/my_comands_bash/comandos_basicos.bash"
-		echo "cls     -> clear"
-		echo ""
-		echo "--Herramientas de sudo--"
-		echo "sd      -> sudo"
-		echo "sag     -> sudo apt-get"
-		echo "s-ins   -> sag install"
-		echo "s-upd   -> sag update"
-		echo "s-chk   -> sag check"
-		echo "s-arm   -> sag autoremove"
-		echo "s-acl   -> sag autoclean"
-		echo "s-chl   -> sag changelog"
-		echo ""
-		echo "--Herramientas de github--"
-		echo "git-c   -> git clone"
-		echo "git-a   -> git add"
-		echo "git-i   -> git init"
-		echo "git-s   -> git status"
-		echo "git-com -> git commit -m"
-		echo "git-p   -> git push"
-		echo "git-pom -> git-p origin master"
-}
+alias help-my_comands="source ~/Documentos/my_comands_bash/helps/helps.bash"
 
 # Inicio de mis comandos
 alias gbsh="gedit ~/.bashrc"
@@ -103,6 +74,4 @@ alias dirmy_appm="~/Apps-MasterCab/"
 # my cordova comands proyects
 source ~/Documentos/my_comands_bash/cordova_scripts.bash
 # end my cordova
-
-
 source ~/Documentos/my_comands_bash/exmaplebash.bash

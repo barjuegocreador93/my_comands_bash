@@ -1,5 +1,8 @@
-
 #!/bin/bash
+
+
+
+
 
 alias gExamplebah="gedit ~/Documentos/my_comands_bash/exmaplebash.bash"
 alias sExamplebah="source ~/Documentos/my_comands_bash/exmaplebash.bash"
