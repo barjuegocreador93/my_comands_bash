@@ -4,8 +4,8 @@
 
 
 
-alias gExamplebah="gedit ~/Documentos/my_comands_bash/exmaplebash.bash"
-alias sExamplebah="source ~/Documentos/my_comands_bash/exmaplebash.bash"
+alias gExamplebah="gedit ~/${My_Comands_dir}/my_comands_bash/exmaplebash.bash"
+alias sExamplebah="source ~/${My_Comands_dir}/my_comands_bash/exmaplebash.bash"
 
 
 

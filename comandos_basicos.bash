@@ -3,14 +3,26 @@ clear
 date
 echo "Hola "
 echo ""
+DocumentsDir="Documentos"
+My_Comands_dir="Documentos"
+function Documents_dir_name()
+{
+	DocumentsDir=$1
+}
 
-alias help-my_comands="source ~/Documentos/my_comands_bash/helps/helps.bash"
+function My_Comands_dir()
+{
+	My_Comands_dir=$1
+}
+
+
+alias help-my_comands="source ~/${My_Comands_dir}/my_comands_bash/helps/helps.bash"
 
 # Inicio de mis comandos
 alias gbsh="gedit ~/.bashrc"
 alias sbsh="source ~/.bashrc"
-alias gcbsh="gedit ~/Documentos/my_comands_bash/comandos_basicos.bash"
-alias scbsh="source ~/Documentos/my_comands_bash/comandos_basicos.bash"
+alias gcbsh="gedit ~/${My_Comands_dir}/my_comands_bash/comandos_basicos.bash"
+alias scbsh="source ~/${My_Comands_dir}/my_comands_bash/comandos_basicos.bash"
 alias sd="sudo"
 alias sag="sd apt-get"
 alias s-ins="sag install"
@@ -38,22 +50,22 @@ alias Atr="cd ..; ls"
 alias android_sdk_tools="cd ~/Android/Sdk/tools/; sh ./android"
 alias android_studio="cd ~/Apps-MasterCab/android-studio/bin; sh ./studio.sh"
 
-alias my_documts="cd ~/Documentos/"
+alias my_documts="cd ~/${DocumentsDir}/"
 
 alias my_proyects="my_documts ; cd Proyects/ ; ls"
-alias dirmy_proyects="~/Documentos/Proyects/"
+alias dirmy_proyects="~/${DocumentsDir}/Proyects/"
 
 alias my_comands="my_documts ; cd my_comands_bash/; ls"
-alias dirmy_comands="~/Documentos/my_comands_bash/"
+alias dirmy_comands="~/${DocumentsDir}/my_comands_bash/"
 
 alias my_repositorys="my_documts ; cd Repositorios/; ls"
-alias dirmy_repositorys="~/Documentos/Repositorios/"
+alias dirmy_repositorys="~/${DocumentsDir}/Repositorios/"
 
 alias my_downlds="cd ~/Descargas/; ls"
-alias dirmy_downlds="~/Documentos/Descargas/"
+alias dirmy_downlds="~/Descargas/"
 
 alias my_disp="cd /media/camilo/; ls"
-alias dirmy_disp="~/Documentos/Descargas/"
+alias dirmy_disp="~/media/camilo/"
 
 alias my_wine="cd ~/.wine/; ls"
 alias dirmy_wine="~/.wine/"
@@ -72,6 +84,6 @@ alias dirmy_appm="~/Apps-MasterCab/"
 # end my_dirs
 
 # my cordova comands proyects
-source ~/Documentos/my_comands_bash/cordova_scripts.bash
+source ~/$My_Comands_dir/my_comands_bash/cordova_scripts.bash
 # end my cordova
-source ~/Documentos/my_comands_bash/exmaplebash.bash
+source ~/$My_Comands_dir/my_comands_bash/exmaplebash.bash

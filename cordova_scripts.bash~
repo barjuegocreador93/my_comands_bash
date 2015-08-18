@@ -1,3 +1,7 @@
+#!/bin/bash
+
+
+
 #permite copiar el ejecutable de un proyecto cordova a otro sitio
 
 alias apk_dir="cd platforms/android/build/outputs/apk"
@@ -43,5 +47,5 @@ fi
 }
 
 
-alias scordova_script.bash="source ~/Documentos/comandos/cordova_scripts.bash"
-alias gcordova_script.bash="gedit ~/Documentos/comandos/cordova_scripts.bash"
+alias scordova_script.bash="source ~/Documentos/my_comands_bash/cordova_scripts.bash"
+alias gcordova_script.bash="gedit ~/Documentos/my_comands_bash/cordova_scripts.bash"
