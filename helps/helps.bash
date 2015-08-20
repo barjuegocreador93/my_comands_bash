@@ -25,3 +25,4 @@
 		echo "git-com -> git commit -m"
 		echo "git-p   -> git push"
 		echo "git-pom -> git-p origin master"
+echo 'cpdt -> sd cp -r dircp(s1) dirtocp(s2) '

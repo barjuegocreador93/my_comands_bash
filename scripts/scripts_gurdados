@@ -1,0 +1,119 @@
+
+git_add()
+{
+
+
+while true
+do
+clear
+echo "         Agregar archivos al repositorio actual: "
+echo "[1] Agregar todos los archivos del directorio"
+echo "[2] Agregar todos los archivos de un directorio externo"
+echo "[3] Agregar un archivo de un directorio externo"
+echo "[4] terminar"
+read -p "Ingrese una opción: " op
+case $op in
+1) git-a .;;
+2) read -p "Escriba el directorio externo: " diextgit
+if [ -d $diext ]; then
+dir=$> pwd
+cd "$diest"
+Atr
+act=$> basename  "$diext"
+sd cp "$diext" "$dir"
+cd "$dir" .
+ git-a $diext
+
+else
+echo "El directorio <<$diext>> no existe"
+fi;;
+3)read -p "Escriba el directorio externo: " diext
+if [ -d $diext ]; then
+ read -p "Escriba el directorio externo: " arext
+if [ -e $arext ]; then 
+ git-a $diext/$arext
+else
+echo "El archivo <<$diext>> no existe"
+fi
+else
+echo "El directorio <<$diext>> no existe"
+fi;;
+4) break;;
+*) echo "Esa no es una opción. ";;
+esac
+done
+
+}
+
+
+
+git_comit()
+{
+
+while true
+do
+clear
+read -p "Ingrese el comentario: " commit
+read -p "Esta seguro de ese comentario (s/n): " ES
+if [ "$ES" = S ]; then
+$ES = "si"
+fi
+if [ "$ES" = s ]; then
+git-com $commit
+read pausa
+clear
+break
+fi
+if [ "$commit" = abortar ]; then
+clear
+break
+fi
+read pausa
+done
+
+git
+ 
+}
+
+git_int()
+{
+read -p "Seguro que quiere convertir esta dirrecion en un rpositorio local? (s/n)" op
+if [ "$op" = s ] || [ "$op" = S ]; then
+git-i
+fi
+}
+
+
+
+
+git_main_cab()
+{
+while true
+do
+clear
+echo "           Bienvenido a la casa del git"
+echo "[1] Crear respositivo local aquí"
+echo "[2] Verificar el estado de la carptea"
+echo "[3] Publicar"
+echo "[4] salir"
+read -p "Ingrese una opción: " op
+case $op in
+1) git_int;;
+2) git-s
+read pausa;;
+3) git_add
+git_comit
+git-p
+read pausa;;
+4)
+clear 
+break;;
+*) echo "Esa no es una opción. ";;
+esac
+done
+
+}
+
+
+
+
