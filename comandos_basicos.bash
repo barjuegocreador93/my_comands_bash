@@ -1,17 +1,21 @@
 #!/bin/bash
 clear
 date
-echo "Hola "
+echo "Hola '$HOSTNAME'!"
 echo ""
 
+My_Comands_dir="~/Documentos"
+My_Comands_root="$My_Comands_dir/my_comands_bash"
 
-alias helps-my_comands="source ~/${My_Comands_dir}/my_comands_bash/helps/helps.bash"
 
+alias My_Comands_init="source $My_Comands_root/init.bash"
+alias my_Comands_help="source $My_comands_root/helps/helps.bash"
+My_Comands_init
 # Inicio de mis comandos
 alias gbsh="gedit ~/.bashrc"
 alias sbsh="source ~/.bashrc"
-alias gcbsh="gedit ${My_Comands_dir}/my_comands_bash/comandos_basicos.bash"
-alias scbsh="source ${My_Comands_dir}/my_comands_bash/comandos_basicos.bash"
+alias gcbsh="gedit "+$My_comands_root+"/comandos_basicos.bash"
+alias scbsh="source "+$My_comands_root+"/comandos_basicos.bash"
 alias sd="sudo"
 alias sag="sd apt-get"
 alias s-ins="sag install"
@@ -73,10 +77,11 @@ alias dirmy_appm="~/Apps-MasterCab/"
 # end my_dirs
 
 # my cordova comands proyects
-source ~/$My_Comands_dir/my_comands_bash/scripts/cordova_scripts.bash
+alias My_comands_cordovaScripts="source $My_Comands_root/scripts/cordova_scripts.bash"
+My_comands_cordovaScripts
 # end my cordova
-source ~/$My_Comands_dir/my_comands_bash/scripts/exmaplebash.bash
-
+alias My_comands_examples="source $My_Comands_root/scripts/exmaplebash.bash"
+My_comands_examples
 function cpdt()
 {
 	sd cp -r -u -v  $1 $2
