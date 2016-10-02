@@ -9,7 +9,7 @@ My_Comands_root="$My_Comands_dir/my_comands_bash"
 
 
 alias My_Comands_init="source $My_Comands_root/init.bash"
-alias my_Comands_help="source $My_comands_root/helps/helps.bash"
+alias my_Comands_help="source $My_Comands_root/helps/helps.bash"
 My_Comands_init
 # Inicio de mis comandos
 alias gbsh="gedit ~/.bashrc"
@@ -43,37 +43,28 @@ alias Atr="cd ..; ls"
 alias android_sdk_tools="cd ~/Android/Sdk/tools/; sh ./android"
 alias android_studio="cd ~/Apps-MasterCab/android-studio/bin; sh ./studio.sh"
 
-alias my_documts="cd ~/  ; cd ${DocumentsDir}/ ; ls "
+alias cDocumentos="cd $DocumentsDir/ ; ls "
 
-alias my_proyects="my_documts ; cd Proyects/ ; ls"
-alias dirmy_proyects="${DocumentsDir}/Proyects/"
+alias cProyects="cd $ProyectosDir ; ls"
+alias dProyectos="$ProyectosDir"
 
-alias my_comands="cd ~/  ; my_documts ; cd my_comands_bash/; ls"
-alias dirmy_comands="${DocumentsDir}/my_comands_bash/"
+alias cComandos="cd $My_Comands_root; ls"
+alias dComandos="$DocumentsDir/my_comands_bash/"
 
-alias my_repositorys="cd ~/  ; my_documts ; cd Repositorios/; ls"
-alias dirmy_repositorys="${DocumentsDir}/Repositorios/"
+alias cDescargas="cd $DowloadsDir; ls"
+alias dDescargas="$DowloadsDir"
 
-alias my_downlds="cd ~/  ; cd ${DowloadsDir}; ls"
-alias dirmy_downlds="${DowloadsDir}"
+function cDir()
+{
+cd $1
+ls
+}
+#'''
+#Examples:
 
-alias my_disp="cd /media/camilo/; ls"
-alias dirmy_disp="~/media/camilo/"
+#alias cMyDir="cd $initVar : ls" 
 
-alias my_wine="cd ~/.wine/; ls"
-alias dirmy_wine="~/.wine/"
-
-alias my_media="cd /media/camilo/; ls"
-alias dirmy_media="/media/camilo/"
-
-alias my_wine_pro="cd ~/.wine/drive_c/'Program Files/'; ls"
-alias dirmy_wine_pro="~/.wine/drive_c/'Program Files/'"
-
-alias my_wine_pro86="cd ~/.wine/drive_c/'Program Files (x86)'/; ls"
-alias dirmy_wine_pro="~/.wine/drive_c/'Program Files (x86)'/"
-
-alias my_appm="cd ~/Apps-MasterCab/; ls"
-alias dirmy_appm="~/Apps-MasterCab/"
+#'''
 # end my_dirs
 
 # my cordova comands proyects
